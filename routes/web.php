@@ -139,6 +139,11 @@ Route::name('custom.')->group(function(){
     })->name('index');
 
 
+    Route::get('/indexsss', function () {
+        return view('frontend.index');
+    })->name('indexss');
+
+
     Route::get('/about', function () {
         return view('frontend.about');
     })->name('about');
