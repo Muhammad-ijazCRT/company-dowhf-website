@@ -1,0 +1,17 @@
+.meet-column .time-selecter-box .time-selecter,.select2-container--default .select2-selection--single,.select2-dropdown .select2-results__option,.select2-dropdown .select2-search__field{color:var(--textblack2);font-weight:400;font-size:2rem;color:var(--textblack2);color:var(--textblack2)}.meet-column .time-selecter-box .time-selecter,.select2-container--default .select2-selection--single{border:none;background-color:transparent;line-height:3rem;border-radius:none}.select2-dropdown{background-color:var(--darkgreenshade);border:1px solid #000!important}.select2-dropdown .select2-search__field{line-height:2rem;width:100%}.available-flex .field-n-selecor .catagory-selector .js-example-basic-single,.select2-container--default .select2-selection--single .select2-selection__rendered{font-weight:400;font-size:2rem;line-height:3rem;color:var(--textblack2);border:none;width:100%;height:100%;transform:translateY(4px)}.select2-container--open .select2-dropdown--above,.select2-container--open .select2-dropdown--below{background:var(--white);box-shadow:0 4px 25px #e4eff8;border-radius:.8rem;padding:3rem;border:none!important;height:fit-content;max-height:300px;overflow-y:auto}.select2-container--open .select2-dropdown--above::-webkit-scrollbar,.select2-container--open .select2-dropdown--below::-webkit-scrollbar{width:5px}.select2-container--open .select2-dropdown--above::-webkit-scrollbar-track,.select2-container--open .select2-dropdown--below::-webkit-scrollbar-track{background:#f1f1f1}.select2-container--open .select2-dropdown--above::-webkit-scrollbar-thumb,.select2-container--open .select2-dropdown--below::-webkit-scrollbar-thumb{background:#888}.select2-container--open .select2-dropdown--above::-webkit-scrollbar-thumb:hover,.select2-container--open .select2-dropdown--below::-webkit-scrollbar-thumb:hover{background:#555}.select2-dropdown .select2-results__option{line-height:2rem;padding:0}.select2-dropdown .select2-results__option:hover{background-color:transparent}.select2-container--default .select2-results>.select2-results__options{max-height:unset}.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{background:0 0;color:var(--primaryblue4)}.select2-results__options{display:flex;flex-direction:column;gap:2.6rem}@media(max-width:520px){.catogries-container .catogory .catogory-data .data-detail,.field-n-selecor .filed-container .job-search,.select2-container--default .select2-selection--single .select2-selection__rendered{font-size:1.4rem;line-height:2rem}.select2-container{z-index:1500; margin-top:auto;margin-bottom:auto;transform:translateY(4px)}.select2-container--default .select2-selection--single .select2-selection__arrow{top:50%;transform:translateY(-66%)}}.intl-tel-input .country-list .country {font-size: 14px;}
+.intl-tel-input .country-list .divider{
+    display: none;
+}
+
+.select2-container--default .select2-results>.select2-results__options{
+    scrollbar-width: none;
+}
+
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+.select2-results__option.select2-results__option--disabled{
+    opacity: 0.5;
+}
