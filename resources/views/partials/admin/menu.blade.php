@@ -181,7 +181,7 @@
                                 <li class="dash-item">
                                     <a class="dash-link"
                                         href="{{ route('goaltracking.index') }}">{{ __('Goal
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Tracking') }}</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Tracking') }}</a>
                                 </li>
                             </ul>
                         </li>
@@ -282,14 +282,22 @@
             @endif
 
             @if (\Auth::user()->type == 'company' || \Auth::user()->type == 'client' || \Auth::user()->type == 'employee')
-                <li
-                    class="dash-item {{ Request::route()->getName() == 'contact-us' ? 'active' : '' }}">
+                <li class="dash-item {{ Request::route()->getName() == 'contact-us' ? 'active' : '' }}">
                     <a href="{{ route('contact-us') }}" class="dash-link"><span class="dash-micon"><i
                                 class="fa fa-id-badge"></i></span><span
                             class="dash-mtext">{{ __('Contact Us') }}</span></a>
                 </li>
             @endif
-            
+
+
+            @if (\Auth::user()->type == 'company')
+                <li class="dash-item {{ Request::route()->getName() == 'emailCompaign' ? 'active' : '' }}">
+                    <a href="{{ route('emailCompaign') }}" class="dash-link"><span class="dash-micon"><i
+                                class="fa fa-mail"></i></span><span
+                            class="dash-mtext">{{ __('Email Compaign') }}</span></a>
+                </li>
+            @endif
+
             @if (\Auth::user()->type == 'company')
                 <li class="dash-item ">
                     <a href="{{ !empty(\Auth::user()->getDefualtViewRouteByModule('item')) ? route(\Auth::user()->getDefualtViewRouteByModule('item')) : route('item.index') }}"

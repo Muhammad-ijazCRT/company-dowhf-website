@@ -100,9 +100,6 @@
                             </div>
                         </div>
                     </form>
-
-                    
-
                 </div>
             </div>
             <!-- [ sample-page ] end -->

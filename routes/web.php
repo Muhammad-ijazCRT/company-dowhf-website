@@ -87,6 +87,7 @@ use App\Http\Controllers\ProjectFrontController;
 use App\Http\Controllers\ProjectStageController;
 use App\Http\Controllers\TrainingTypeController;
 use App\Http\Controllers\CompanyPolicyController;
+use App\Http\Controllers\EmailCompaignController;
 use App\Http\Controllers\EmailTemplateController;
 use App\Http\Controllers\MolliePaymentController;
 use App\Http\Controllers\PaymentMethodController;
@@ -109,8 +110,8 @@ use App\Http\Controllers\FlutterwavePaymentController;
 use App\Http\Controllers\LandingPageSectionController;
 use App\Http\Controllers\PaymentWallPaymentController;
 use App\Http\Controllers\Auth\RegisteredUserController;
-use App\Http\Controllers\NotificationTemplatesController;
 
+use App\Http\Controllers\NotificationTemplatesController;
 use App\Http\Controllers\Auth\EmailVerificationPromptController;
 use App\Http\Controllers\Auth\EmailVerificationNotificationController;
 
@@ -300,8 +301,16 @@ Route::group(['middleware' => ['verified']], function () {
         function () {
             Route::get('/contact-us', [ContactUsController::class , 'index'])->name('contact-us');    
             Route::get('/contact-us/create', [ContactUsController::class , 'create'])->name('contact-us.create');    
+
+
         }
     );
+    
+    Route::get('/email-compaign-index', [EmailCompaignController::class , 'emailCompaignIndex'])->name('emailCompaign');    
+    Route::post('/run-email-compaign', [EmailCompaignController::class, 'runCompaign'])->name('runCompaign');
+
+
+    
     // Customize Contacted Us Ends Here
 
 
